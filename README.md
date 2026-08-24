@@ -59,22 +59,6 @@ Developed a structured analytical report connecting healthcare insights with pot
 - SQL
 - GitHub
 
-## Repository Structure
-
-healthcare-readmission-analysis/
-
-├── README.md
-├── data/
-│   └── README.md
-├── docs/
-│   ├── Week_1_Strategic_Plan.docx
-│   ├── Week_2_Data_Collection_QA.docx
-│   ├── Week_3_Data_Visualization.docx
-│   ├── Week_4_Statistical_Analysis_Predictive_Modeling.docx
-│   └── Week_5_Healthcare_Analysis_Report.docx
-└── references/
-    └── references.md
-
 ## Project Status
 
 | Week | Task | Status |
