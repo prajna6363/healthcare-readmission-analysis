@@ -1,126 +1,86 @@
+# Healthcare Readmission Analysis
 
-# Healthcare Patient Readmission Analysis
+## Project Overview
 
-## Week 1 – Healthcare Data Analysis Planning and Strategy
+This project focuses on analyzing healthcare data to understand patterns associated with hospital readmission among patients with diabetes. The project uses the Diabetes 130-US Hospitals for Years 1999–2008 dataset.
 
-### Project Overview
+The project follows a five-week analytical workflow covering data analysis planning, data quality assurance, visualization, statistical analysis, predictive modeling, and evidence-based recommendations.
 
-This project focuses on developing a strategic plan for a healthcare data analysis project centered on **patient readmission within 30 days of hospital discharge**.
+## Objectives
 
-The purpose of the project is to establish a structured framework for collecting, preparing, analyzing, visualizing, and communicating healthcare data. The project will use public or appropriately de-identified healthcare data and will focus on analytical planning rather than individual clinical decision-making.
+- Analyze patient readmission patterns.
+- Establish data quality and validation procedures.
+- Identify important healthcare metrics.
+- Develop a statistical analysis framework.
+- Develop a predictive modeling framework.
+- Communicate insights effectively.
+- Provide evidence-based recommendations.
+- Consider healthcare privacy, bias, fairness, and ethics.
 
-## Project Objectives
+## Weekly Progress
 
-* Define the scope and objectives of the healthcare analytics project.
-* Identify key questions related to patient readmission.
-* Define important healthcare KPIs.
-* Develop a data acquisition strategy.
-* Establish data cleaning and quality assurance procedures.
-* Plan statistical and predictive analysis methods.
-* Design a healthcare data visualization strategy.
-* Identify project risks and contingency plans.
-* Develop a roadmap for completing the project.
+### Week 1 — Healthcare Data Analysis Planning
+Developed the overall project strategy, objectives, metrics, analytical roadmap, and expected deliverables.
 
-## Key Analytical Questions
+### Week 2 — Data Collection and Quality Assurance
+Documented the dataset source, data dictionary, data-quality checks, missing-value strategy, duplicate checks, validation rules, and risk mitigation plan.
 
-1. What is the overall 30-day readmission rate?
-2. Which age groups have higher readmission rates?
-3. Which diagnosis categories are associated with higher readmission?
-4. Does length of hospital stay relate to readmission?
-5. Does previous hospitalization affect readmission?
-6. What differences exist between readmitted and non-readmitted patients?
-7. What trends can be identified in patient readmissions?
+### Week 3 — Data Visualization and Insights Communication
+Developed a visualization plan covering readmission patterns, demographics, hospital utilization, and other healthcare metrics. Identified suitable tools and dashboard concepts.
 
-## Key Performance Indicators
+### Week 4 — Statistical Analysis and Predictive Modeling
+Developed a framework covering statistical techniques, variable selection, data segmentation, preprocessing, train/test splitting, cross-validation, model selection, evaluation metrics, bias, and ethics.
 
-* 30-Day Readmission Rate
-* Patient Volume
-* Average Length of Stay
-* Previous Admission Rate
-* Readmission Rate by Age Group
-* Readmission Rate by Diagnosis
-* Readmission Trend
+### Week 5 — Report Writing and Evidence-Based Recommendations
+Developed a structured analytical report connecting healthcare insights with potential recommendations, limitations, future research, and healthcare decision-making.
 
-## Technology Stack
+## Dataset
 
-| Technology          | Purpose                            |
-| ------------------- | ---------------------------------- |
-| Excel / Power Query | Data inspection and transformation |
-| SQL                 | Data querying and aggregation      |
-| Python / Pandas     | Data cleaning and analysis         |
-| Matplotlib          | Data visualization                 |
-| Power BI            | Dashboard development              |
-| GitHub              | Version control and documentation  |
+**Dataset:** Diabetes 130-US Hospitals for Years 1999–2008
 
-## Project Roadmap
+**Source:** UCI Machine Learning Repository
 
-| Week   | Phase                             | Main Focus                                  |
-| ------ | --------------------------------- | ------------------------------------------- |
-| Week 1 | Planning & Strategy               | Project scope, objectives, KPIs and roadmap |
-| Week 2 | Data Collection & Quality         | Dataset selection, validation and cleaning  |
-| Week 3 | Visualization                     | Dashboard planning and visualization        |
-| Week 4 | Statistical & Predictive Analysis | Statistical methods and predictive modeling |
-| Week 5 | Reporting                         | Findings, insights and recommendations      |
-| Week 6 | Integration                       | Final report and self-assessment            |
+**Target Variable:** `readmitted`
 
-## Project Scope
+**Readmission Categories:**
 
-### In Scope
+- `<30` — Readmitted within 30 days
+- `>30` — Readmitted after 30 days
+- `NO` — Not readmitted
 
-* Patient demographic information
-* Admission and discharge information
-* Diagnosis categories
-* Previous hospitalization
-* Length of stay
-* Readmission outcomes
-* Data cleaning and validation
-* Data analysis
-* Data visualization
-* Statistical analysis planning
+## Tools
 
-### Out of Scope
-
-* Individual patient diagnosis
-* Individual treatment recommendations
-* Personally identifiable patient information
-* Autonomous clinical decision-making
-* Clinical deployment of predictive models
-
-## Risk Management
-
-Potential risks include:
-
-* Missing data
-* Duplicate records
-* Inconsistent data formats
-* Dataset limitations
-* Data bias
-* Privacy concerns
-* Technical problems
-* Project delays
-* Incorrect interpretation of healthcare data
-
-These risks will be addressed through data validation, documentation, de-identification, version control, backups, and appropriate review.
+- Python
+- Pandas
+- Matplotlib
+- Scikit-learn
+- Excel
+- Power BI
+- SQL
+- GitHub
 
 ## Repository Structure
 
-```text
 healthcare-readmission-analysis/
-│
+
 ├── README.md
-│
+├── data/
+│   └── README.md
 ├── docs/
-│   └── Week_1_Strategic_Plan.docx
-│
+│   ├── Week_1_Strategic_Plan.docx
+│   ├── Week_2_Data_Collection_QA.docx
+│   ├── Week_3_Data_Visualization.docx
+│   ├── Week_4_Statistical_Analysis_Predictive_Modeling.docx
+│   └── Week_5_Healthcare_Analysis_Report.docx
 └── references/
     └── references.md
-```
 
-Additional folders and files will be added as the project progresses through Weeks 2–6.
+## Project Status
 
-## Current Status
-
-**Week 1 – Planning and Strategy**
-
-Status: **In Progress**
-
+| Week | Task | Status |
+|---|---|---|
+| Week 1 | Data Analysis Planning | Completed |
+| Week 2 | Data Collection & QA | Completed |
+| Week 3 | Data Visualization | Completed |
+| Week 4 | Statistical Analysis & Predictive Modeling | Completed |
+| Week 5 | Report Writing & Recommendations | Completed |
