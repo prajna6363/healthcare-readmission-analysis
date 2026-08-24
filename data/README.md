@@ -2,67 +2,109 @@
 
 ## Dataset Name
 
-**Diabetes 130-US Hospitals for Years 1999–2008**
+Diabetes 130-US Hospitals for Years 1999–2008
 
 ## Dataset Description
 
-This project uses the **Diabetes 130-US Hospitals for Years 1999–2008** dataset for healthcare data analysis and hospital readmission analysis.
+The Diabetes 130-US Hospitals dataset contains healthcare information related to hospital encounters involving patients with diabetes.
 
-The dataset contains hospital encounter records for patients with diabetes collected from 130 US hospitals during the period **1999–2008**. It includes demographic, admission, clinical, laboratory, medication, and hospital utilization information.
+The dataset includes information about patient demographics, hospital admissions, diagnoses, laboratory procedures, medications, and healthcare utilization.
 
-The primary target variable is **`readmitted`**, which indicates whether a patient was readmitted within 30 days, after 30 days, or not readmitted.
+The dataset is used in this project to study patterns associated with hospital readmission.
 
 ## Dataset Source
 
-* **Original Source:** UCI Machine Learning Repository
-* **Download Source:** Kaggle
-* **Dataset Period:** 1999–2008
-* **Domain:** Healthcare
-* **File:** `diabetic.csv`
+**Original Source:** UCI Machine Learning Repository
 
-## Dataset Purpose
+**Dataset:** Diabetes 130-US Hospitals for Years 1999–2008
 
-The dataset will be used to:
+**Download Source:** Kaggle
 
-* Assess healthcare data quality
-* Identify missing and inconsistent values
-* Detect duplicate records
-* Validate data types and value ranges
-* Develop a data-cleaning strategy
-* Analyze hospital readmission patterns
-* Support healthcare data visualization and analytics in later project stages
+The dataset was selected because it is relevant to the project's healthcare readmission analysis objective and contains a wide range of demographic, clinical, and hospital-utilization variables.
 
-## Data Handling
+## Target Variable
 
-The original dataset is **not included directly in this GitHub repository**. This repository contains documentation about the dataset and its handling process.
+The primary target variable is:
 
-To reproduce the analysis, download the dataset from the original/public source and place the CSV file in this directory using the following filename:
+`readmitted`
 
-```text
-data/
-└── diabetic.csv
-```
+It contains three categories:
 
-The raw dataset should remain unchanged. Any cleaned or transformed version should be stored separately to preserve data reproducibility.
+| Value | Meaning |
+|---|---|
+| `<30` | Patient was readmitted within 30 days |
+| `>30` | Patient was readmitted after 30 days |
+| `NO` | Patient was not readmitted |
 
-## Important Data Considerations
+## Dataset Variables
 
-The dataset contains missing values represented in some fields using `?`. These values will be identified and standardized during the data-quality assessment.
+The dataset contains variables related to:
 
-Repeated `patient_nbr` values should not automatically be considered duplicate records because the same patient may have multiple hospital encounters.
+- Patient demographics
+- Admission information
+- Hospital stay
+- Diagnoses
+- Procedures
+- Laboratory tests
+- Medications
+- Healthcare utilization
+- Readmission status
 
-The dataset is historical and covers the period from 1999 to 2008. Therefore, findings should be interpreted within the context of the data collection period and should not automatically be generalized to current healthcare settings.
+Examples of variables include:
 
-## Privacy and Ethics
+- `race`
+- `gender`
+- `age`
+- `time_in_hospital`
+- `admission_type_id`
+- `discharge_disposition_id`
+- `admission_source_id`
+- `num_lab_procedures`
+- `num_procedures`
+- `num_medications`
+- `number_outpatient`
+- `number_emergency`
+- `number_inpatient`
+- `number_diagnoses`
+- `readmitted`
 
-The dataset is publicly available and de-identified. The project will not attempt to identify individual patients or expose sensitive information.
+## Data Files
 
-Analysis results will be presented in an aggregated manner, and the dataset will be used only for educational and analytical purposes.
+The project uses a cleaned version of the dataset for analysis:
 
+`diabetic_cleaned.xlsx`
 
+The original raw dataset is not stored in this repository unless required and permitted by the dataset's distribution terms.
+
+## Data Preparation
+
+The dataset is prepared for analysis through:
+
+- Missing-value assessment
+- Duplicate checking
+- Data-type validation
+- Categorical consistency checks
+- Invalid-value checks
+- Outlier review
+- Feature suitability assessment
+
+The cleaned dataset is used as the basis for the statistical analysis and predictive modeling framework.
+
+## Data Privacy and Ethics
+
+The dataset is publicly available and de-identified. The project does not attempt to identify individual patients.
+
+Healthcare data is handled responsibly, with consideration given to:
+
+- Patient privacy
+- Data security
+- Bias
+- Fairness
+- Responsible interpretation
+- Ethical use of predictive models
 
 ## Reproducibility
 
-Before running future analysis scripts, ensure that the dataset has been downloaded from the appropriate public source and placed in the `data/` directory.
+Researchers or reviewers wishing to reproduce the project should obtain the dataset from its original public source and place the required data file in the appropriate local project directory.
 
-All data-cleaning and transformation steps will be documented so that the analysis can be reproduced consistently.
+The dataset source and processing decisions are documented to support reproducibility.
